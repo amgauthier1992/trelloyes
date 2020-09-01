@@ -15,7 +15,7 @@ class List extends React.Component {
           {this.props.cards.map((card, index) => {
             return (
               <div key={index}>
-                <Card />
+                <Card title={card.title} content={card.content} />
               </div>
             );
           })}

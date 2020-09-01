@@ -13,7 +13,12 @@ class App extends React.Component {
           {this.props.store.lists.map((list, index) => {
             return (
               <section key={index}>
-                <List header={list.header} cards={list.cardIds} />
+                <List
+                  header={list.header}
+                  cards={list.cardIds.map(
+                    (id) => this.props.store.allCards[id]
+                  )}
+                />
               </section>
             );
           })}

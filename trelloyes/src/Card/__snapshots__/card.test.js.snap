@@ -9,7 +9,11 @@ exports[`Card component renders the UI as expected 1`] = `
   >
     delete
   </button>
-  <h3 />
-  <p />
+  <h3>
+    First Card
+  </h3>
+  <p>
+    lorem ipsum
+  </p>
 </div>
 `;

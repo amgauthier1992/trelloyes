@@ -14,3 +14,5 @@ ReactDOM.render(
 //Line 9-calling App, sending an object with a key of store. With react, props
 //are used as parameters, but in HTML attribute form.
 //App({store:Store},x,x,x)
+
+//Line 9- We now have access to the store prop in our App component

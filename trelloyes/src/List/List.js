@@ -34,3 +34,5 @@ class List extends React.Component {
 
 export default List;
 //iterate through cards rendering a card component
+
+//line 15. Cards is the array of objects passed through App that contains the array of card objects.

@@ -7,6 +7,7 @@ import List from "./List";
 it("renders without crashing", () => {
   const div = document.createElement("div");
   ReactDOM.render(
+    //use props since List component is expecting header and cards
     <List
       header={"Header"}
       cards={[
@@ -17,6 +18,7 @@ it("renders without crashing", () => {
     />,
     div
   );
+  //deletes parent div created so as to not use up memory
   ReactDOM.unmountComponentAtNode(div);
 });
 
@@ -33,6 +35,6 @@ it("renders a dummy list of cards as expected", () => {
         ]}
       />
     )
-    .toJSON();
-  expect(tree).toMatchSnapshot();
+    .toJSON(); //not converting it to JSON its converting it to HTML. 
+  expect(tree).toMatchSnapshot(); //tree is our actual component
 });
